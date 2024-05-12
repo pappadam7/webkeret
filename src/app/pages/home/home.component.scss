@@ -1,0 +1,38 @@
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 100%;
+}
+
+h1{
+  display: flex;
+  margin: 1%;
+  font-size: 2.3em;
+}
+
+.kep-bal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1%;
+}
+
+.kep-jobb{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p{
+  max-height: 100%;
+  margin: 10px;
+  font-size: 2em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

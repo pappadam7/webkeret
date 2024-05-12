@@ -1,0 +1,14 @@
+<div class="new-appointment">
+  <h1>Új időpont foglalás!</h1>
+  <form #formData="ngForm" (submit)="onSubmit(formData)">
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Válasszon dátumot" name="selectedDate" [(ngModel)]="formData.value.selectedDate">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput placeholder="Írj néhány mondatot az elképzelésedről!" rows="5" name="message" [(ngModel)]="formData.value.message"></textarea>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Foglalás</button>
+  </form>
+</div>
